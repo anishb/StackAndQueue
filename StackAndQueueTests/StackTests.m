@@ -9,11 +9,11 @@
 #import <XCTest/XCTest.h>
 #import "StackArray.h"
 
-@interface StackAndQueueTests : XCTestCase
+@interface StackTests : XCTestCase
 @property (nonatomic, strong) StackArray *stack;
 @end
 
-@implementation StackAndQueueTests
+@implementation StackTests
 
 - (void)setUp
 {

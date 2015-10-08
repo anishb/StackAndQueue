@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		FA884E411BC6E5DE007B300E /* StackArray.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEB4FDF1BC6D4EA00301C04 /* StackArray.m */; settings = {ASSET_TAGS = (); }; };
 		FA884E421BC6E5E0007B300E /* QueueArray.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEB4FE21BC6D7EB00301C04 /* QueueArray.m */; settings = {ASSET_TAGS = (); }; };
+		FA884E441BC6EA4F007B300E /* QueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA884E431BC6EA4F007B300E /* QueueTests.m */; settings = {ASSET_TAGS = (); }; };
 		FAEB4FD81BC6D4B000301C04 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEB4FD71BC6D4B000301C04 /* main.m */; };
 		FAEB4FE01BC6D4EA00301C04 /* StackArray.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEB4FDF1BC6D4EA00301C04 /* StackArray.m */; settings = {ASSET_TAGS = (); }; };
 		FAEB4FE31BC6D7EB00301C04 /* QueueArray.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEB4FE21BC6D7EB00301C04 /* QueueArray.m */; settings = {ASSET_TAGS = (); }; };
-		FAEB4FEF1BC6DE0800301C04 /* StackAndQueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEB4FEE1BC6DE0800301C04 /* StackAndQueueTests.m */; };
+		FAEB4FEF1BC6DE0800301C04 /* StackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEB4FEE1BC6DE0800301C04 /* StackTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FA884E431BC6EA4F007B300E /* QueueTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueueTests.m; sourceTree = "<group>"; };
 		FAEB4FD41BC6D4B000301C04 /* StackAndQueue */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StackAndQueue; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAEB4FD71BC6D4B000301C04 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FAEB4FDE1BC6D4EA00301C04 /* StackArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackArray.h; sourceTree = "<group>"; };
@@ -45,7 +47,7 @@
 		FAEB4FE11BC6D7EB00301C04 /* QueueArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueueArray.h; sourceTree = "<group>"; };
 		FAEB4FE21BC6D7EB00301C04 /* QueueArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueueArray.m; sourceTree = "<group>"; };
 		FAEB4FEC1BC6DE0800301C04 /* StackAndQueueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StackAndQueueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAEB4FEE1BC6DE0800301C04 /* StackAndQueueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StackAndQueueTests.m; sourceTree = "<group>"; };
+		FAEB4FEE1BC6DE0800301C04 /* StackTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StackTests.m; sourceTree = "<group>"; };
 		FAEB4FF01BC6DE0800301C04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,8 +102,9 @@
 		FAEB4FED1BC6DE0800301C04 /* StackAndQueueTests */ = {
 			isa = PBXGroup;
 			children = (
-				FAEB4FEE1BC6DE0800301C04 /* StackAndQueueTests.m */,
+				FAEB4FEE1BC6DE0800301C04 /* StackTests.m */,
 				FAEB4FF01BC6DE0800301C04 /* Info.plist */,
+				FA884E431BC6EA4F007B300E /* QueueTests.m */,
 			);
 			path = StackAndQueueTests;
 			sourceTree = "<group>";
@@ -206,7 +209,8 @@
 			files = (
 				FA884E411BC6E5DE007B300E /* StackArray.m in Sources */,
 				FA884E421BC6E5E0007B300E /* QueueArray.m in Sources */,
-				FAEB4FEF1BC6DE0800301C04 /* StackAndQueueTests.m in Sources */,
+				FAEB4FEF1BC6DE0800301C04 /* StackTests.m in Sources */,
+				FA884E441BC6EA4F007B300E /* QueueTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
