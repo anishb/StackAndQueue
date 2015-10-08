@@ -7,8 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA884E411BC6E5DE007B300E /* StackArray.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEB4FDF1BC6D4EA00301C04 /* StackArray.m */; settings = {ASSET_TAGS = (); }; };
+		FA884E421BC6E5E0007B300E /* QueueArray.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEB4FE21BC6D7EB00301C04 /* QueueArray.m */; settings = {ASSET_TAGS = (); }; };
 		FAEB4FD81BC6D4B000301C04 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEB4FD71BC6D4B000301C04 /* main.m */; };
+		FAEB4FE01BC6D4EA00301C04 /* StackArray.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEB4FDF1BC6D4EA00301C04 /* StackArray.m */; settings = {ASSET_TAGS = (); }; };
+		FAEB4FE31BC6D7EB00301C04 /* QueueArray.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEB4FE21BC6D7EB00301C04 /* QueueArray.m */; settings = {ASSET_TAGS = (); }; };
+		FAEB4FEF1BC6DE0800301C04 /* StackAndQueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEB4FEE1BC6DE0800301C04 /* StackAndQueueTests.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA884E3F1BC6E345007B300E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAEB4FCC1BC6D4B000301C04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAEB4FD31BC6D4B000301C04;
+			remoteInfo = StackAndQueue;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		FAEB4FD21BC6D4B000301C04 /* CopyFiles */ = {
@@ -25,10 +40,24 @@
 /* Begin PBXFileReference section */
 		FAEB4FD41BC6D4B000301C04 /* StackAndQueue */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StackAndQueue; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAEB4FD71BC6D4B000301C04 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FAEB4FDE1BC6D4EA00301C04 /* StackArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackArray.h; sourceTree = "<group>"; };
+		FAEB4FDF1BC6D4EA00301C04 /* StackArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackArray.m; sourceTree = "<group>"; };
+		FAEB4FE11BC6D7EB00301C04 /* QueueArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueueArray.h; sourceTree = "<group>"; };
+		FAEB4FE21BC6D7EB00301C04 /* QueueArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueueArray.m; sourceTree = "<group>"; };
+		FAEB4FEC1BC6DE0800301C04 /* StackAndQueueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StackAndQueueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAEB4FEE1BC6DE0800301C04 /* StackAndQueueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StackAndQueueTests.m; sourceTree = "<group>"; };
+		FAEB4FF01BC6DE0800301C04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		FAEB4FD11BC6D4B000301C04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAEB4FE91BC6DE0800301C04 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,8 +70,9 @@
 		FAEB4FCB1BC6D4B000301C04 = {
 			isa = PBXGroup;
 			children = (
-				FAEB4FD61BC6D4B000301C04 /* StackAndQueue */,
+				FAEB4FED1BC6DE0800301C04 /* StackAndQueueTests */,
 				FAEB4FD51BC6D4B000301C04 /* Products */,
+				FAEB4FD61BC6D4B000301C04 /* StackAndQueue */,
 			);
 			sourceTree = "<group>";
 		};
@@ -50,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				FAEB4FD41BC6D4B000301C04 /* StackAndQueue */,
+				FAEB4FEC1BC6DE0800301C04 /* StackAndQueueTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +89,21 @@
 			isa = PBXGroup;
 			children = (
 				FAEB4FD71BC6D4B000301C04 /* main.m */,
+				FAEB4FDE1BC6D4EA00301C04 /* StackArray.h */,
+				FAEB4FDF1BC6D4EA00301C04 /* StackArray.m */,
+				FAEB4FE11BC6D7EB00301C04 /* QueueArray.h */,
+				FAEB4FE21BC6D7EB00301C04 /* QueueArray.m */,
 			);
 			path = StackAndQueue;
+			sourceTree = "<group>";
+		};
+		FAEB4FED1BC6DE0800301C04 /* StackAndQueueTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAEB4FEE1BC6DE0800301C04 /* StackAndQueueTests.m */,
+				FAEB4FF01BC6DE0800301C04 /* Info.plist */,
+			);
+			path = StackAndQueueTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +126,24 @@
 			productReference = FAEB4FD41BC6D4B000301C04 /* StackAndQueue */;
 			productType = "com.apple.product-type.tool";
 		};
+		FAEB4FEB1BC6DE0800301C04 /* StackAndQueueTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAEB4FF11BC6DE0800301C04 /* Build configuration list for PBXNativeTarget "StackAndQueueTests" */;
+			buildPhases = (
+				FAEB4FE81BC6DE0800301C04 /* Sources */,
+				FAEB4FE91BC6DE0800301C04 /* Frameworks */,
+				FAEB4FEA1BC6DE0800301C04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA884E401BC6E345007B300E /* PBXTargetDependency */,
+			);
+			name = StackAndQueueTests;
+			productName = StackAndQueueTests;
+			productReference = FAEB4FEC1BC6DE0800301C04 /* StackAndQueueTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +154,9 @@
 				ORGANIZATIONNAME = "Anish Basu";
 				TargetAttributes = {
 					FAEB4FD31BC6D4B000301C04 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					FAEB4FEB1BC6DE0800301C04 = {
 						CreatedOnToolsVersion = 7.0.1;
 					};
 				};
@@ -109,20 +174,51 @@
 			projectRoot = "";
 			targets = (
 				FAEB4FD31BC6D4B000301C04 /* StackAndQueue */,
+				FAEB4FEB1BC6DE0800301C04 /* StackAndQueueTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAEB4FEA1BC6DE0800301C04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FAEB4FD01BC6D4B000301C04 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAEB4FE01BC6D4EA00301C04 /* StackArray.m in Sources */,
+				FAEB4FE31BC6D7EB00301C04 /* QueueArray.m in Sources */,
 				FAEB4FD81BC6D4B000301C04 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FAEB4FE81BC6DE0800301C04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA884E411BC6E5DE007B300E /* StackArray.m in Sources */,
+				FA884E421BC6E5E0007B300E /* QueueArray.m in Sources */,
+				FAEB4FEF1BC6DE0800301C04 /* StackAndQueueTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA884E401BC6E345007B300E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAEB4FD31BC6D4B000301C04 /* StackAndQueue */;
+			targetProxy = FA884E3F1BC6E345007B300E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		FAEB4FD91BC6D4B000301C04 /* Debug */ = {
@@ -216,6 +312,28 @@
 			};
 			name = Release;
 		};
+		FAEB4FF21BC6DE0800301C04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = StackAndQueueTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.anishb.StackAndQueueTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FAEB4FF31BC6DE0800301C04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = StackAndQueueTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.anishb.StackAndQueueTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -235,6 +353,16 @@
 				FAEB4FDD1BC6D4B000301C04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAEB4FF11BC6DE0800301C04 /* Build configuration list for PBXNativeTarget "StackAndQueueTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAEB4FF21BC6DE0800301C04 /* Debug */,
+				FAEB4FF31BC6DE0800301C04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
